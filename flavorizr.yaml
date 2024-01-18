@@ -1,0 +1,33 @@
+flavors:
+  qa:
+    app:
+      name: "Geofencer QA"
+
+    android:
+      applicationId: "com.thuainx.geofencer.qa"  
+    ios:
+      bundleId: "com.thuainx.geofencer.qa"
+    macos:
+      bundleId: "com.thuainx.geofencer.qa"  
+  uat:
+    app:
+      name: "Geofencer UAT"
+  
+    android:
+      applicationId: "com.thuainx.geofencer.uat"
+    ios:
+      bundleId: "com.thuainx.geofencer.uat"
+    macos:
+      bundleId: "com.thuainx.geofencer.uat"
+  dev:
+    app:
+      name: "Geofencer DEV"
+  
+    android:
+      applicationId: "com.thuainx.geofencer.dev"
+    ios:
+      bundleId: "com.thuainx.geofencer.dev"
+    macos:
+      bundleId: "com.thuainx.geofencer.dev"
+
+      
