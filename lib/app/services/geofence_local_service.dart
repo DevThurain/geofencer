@@ -41,8 +41,8 @@ class GeofenceLocalService extends GetxService {
       longitude: 96.157835,
       radius: [
         GeofenceRadius(id: 'radius_100m', length: 100),
-        GeofenceRadius(id: 'radius_25m', length: 25),
-        GeofenceRadius(id: 'radius_250m', length: 250),
+        // GeofenceRadius(id: 'radius_25m', length: 25),
+        // GeofenceRadius(id: 'radius_250m', length: 250),
         GeofenceRadius(id: 'radius_200m', length: 200),
       ],
     )
@@ -54,7 +54,8 @@ class GeofenceLocalService extends GetxService {
     print('geofence: ${geofence.toJson()}');
     print('geofenceRadius: ${geofenceRadius.toJson()}');
     print('geofenceStatus: ${geofenceStatus.toString()}');
-    geofenceInfo.value = geofenceRadius.toJson().toString();
+    var radiusJson = geofenceRadius.toJson();
+    geofenceInfo.value = "${radiusJson['id']} - ${radiusJson['status']}";
     // _geofenceStreamController.sink.add(geofence);
   }
 
